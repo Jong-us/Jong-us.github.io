@@ -268,16 +268,9 @@
                 });
             });
 
-            // Dynamic greeting based on time
-            const header = document.querySelector('h1');
-            const hours = new Date().getHours();
-            let greeting = '';
             
-            if (hours < 12) greeting = '🌅 Good morning! I\'m ';
-            else if (hours < 17) greeting = '☀️ Good afternoon! I\'m ';
-            else greeting = '🌙 Good evening! I\'m ';
             
-            header.textContent = greeting + 'Your Name';
+            header.textContent = 'Jongus';
         });
     </script>
 </body>
