@@ -1,190 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JONGUS</title>
-    <!-- Righteous Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<style>
+    /* Add this to your style block (or replace .grid styles) */
+    .vertical-sections {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 40px;
+    }
+</style>
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: #fafafa;
-            min-height: 100vh;
-            position: relative;
-        }
-
-        /* Abstract minimalist shapes */
-        .abstract-circle {
-            position: absolute;
-            top: -120px;
-            left: -120px;
-            width: 320px;
-            height: 320px;
-            background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
-            border-radius: 50%;
-            opacity: 0.13;
-            z-index: 0;
-        }
-        .abstract-stripe {
-            position: absolute;
-            top: 320px;
-            right: -80px;
-            width: 480px;
-            height: 40px;
-            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
-            border-radius: 20px;
-            opacity: 0.1;
-            z-index: 0;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            position: relative;
-            z-index: 1;
-        }
-
-        /* Remove border-radius and box-shadow below for header */
-        header {
-            background: white;
-            /* border-radius: 20px; */
-            padding: 50px 30px;
-            margin-bottom: 40px;
-            /* box-shadow: 0 10px 30px rgba(102,126,234,0.07); */
-            text-align: left;
-            position: relative;
-        }
-
-        h1 {
-            font-family: 'Righteous', cursive;
-            font-size: 3em;
-            margin-bottom: 10px;
-            color: #764ba2;
-            letter-spacing: 2px;
-        }
-        .subtitle {
-            font-family: 'Righteous', cursive;
-            font-size: 1.3em;
-            color: #667eea;
-            margin-bottom: 30px;
-            letter-spacing: 1px;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-        }
-
-        /* Remove border-radius and box-shadow below for cards */
-        .card {
-            background: rgba(255, 255, 255, 0.95);
-            /* border-radius: 20px; */
-            padding: 30px;
-            /* box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1); */
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .card:hover {
-            transform: translateY(-10px);
-            /* box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2); */
-        }
-
-        .card h2 {
-            font-family: 'Righteous', cursive;
-            color: #764ba2;
-            margin-bottom: 15px;
-            font-size: 1.5em;
-            letter-spacing: 1px;
-        }
-        .card p {
-            color: #666;
-            margin-bottom: 20px;
-        }
-        /* Remove box-shadow below for buttons */
-        .btn {
-            display: inline-block;
-            background: linear-gradient(45deg, #667eea, #764ba2);
-            color: white;
-            padding: 12px 25px;
-            text-decoration: none;
-            border-radius: 25px;
-            transition: all 0.3s ease;
-            font-weight: 500;
-            /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); */
-        }
-        .btn:hover {
-            transform: translateY(-2px);
-            /* box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); */
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 60px;
-            padding: 30px;
-            color: #667eea;
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                padding: 10px;
-            }
-            h1 {
-                font-size: 2em;
-            }
-            .grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="abstract-circle"></div>
-    <div class="abstract-stripe"></div>
-    <div class="container">
-        <header>
-            <h1>JONGUs</h1>
-            <p class="subtitle">Doiner</p>
-        </header>
-
-        <div class="grid">
-            <div class="card">
-                <h2>About Me</h2>
-                <p>I'm a doiner with code.</p>
-            </div>
-            <div class="card">
-                <h2>Featured Project</h2>
-                <p> Stop </p>
-                <a href="https://github.com/yourusername/project-name" class="btn">View Project</a>
-            </div>
-            <div class="card">
-                <h2>Blog</h2>
-                <p>I write</p>
-                <a href="/blog" class="btn">Read Articles</a>
-            </div>
-            <div class="card">
-                <h2>Contact</h2>
-                <p>I reach out</p>
-                <a href="mailto:jkcramer7@gmail.com" class="btn">Get in Touch</a>
-            </div>
-        </div>
-
-        <footer>
-            <p>&copy; 2025 Jongus. </p>
-        </footer>
+<div class="vertical-sections">
+    <div class="card">
+        <h2>Photos</h2>
+        <p>Photography and snapshots.</p>
+        <!-- You can add thumbnails, gallery links, etc. here -->
     </div>
-</body>
-</html>
+    <div class="card">
+        <h2>Visuals</h2>
+        <p>Artwork, graphics, and visual design.</p>
+        <!-- Add visual samples or portfolio links -->
+    </div>
+    <div class="card">
+        <h2>Sounds</h2>
+        <p>Music, recordings, and audio projects.</p>
+        <!-- Embed audio players or link to tracks -->
+    </div>
+    <div class="card">
+        <h2>Writing</h2>
+        <p>Stories, articles, and written work.</p>
+        <!-- Link to blog, stories, or showcase writing -->
+    </div>
+</div>
